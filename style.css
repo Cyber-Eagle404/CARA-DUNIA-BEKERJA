@@ -1,23 +1,35 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
     background: #0073e6;
     color: white;
-    padding: 15px;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
+    margin: 10px 0 0;
 }
 
 nav ul li {
@@ -29,28 +41,54 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
 }
 
 section {
-    padding: 80px 20px;
-    margin-top: 50px;
+    padding: 100px 20px;
+    margin-top: 60px;
 }
 
-#home {
-    background: #f0f0f0;
-    padding: 100px;
+#beranda {
+    background: #e0f7ff;
+    padding: 150px 20px;
 }
 
-#about, #services, #contact {
+#tentang, #layanan, #kontak {
     background: #fff;
-    padding: 80px;
+    padding: 80px 20px;
+}
+
+#galeri {
+    background: #f0f0f0;
+    padding: 80px 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
     background: #0073e6;
     color: white;
-    padding: 15px;
-    position: fixed;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
